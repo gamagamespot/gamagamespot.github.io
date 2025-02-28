@@ -6,6 +6,10 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://gamagamespot.github.io</loc>
-    <lastmod>2025-02-28T21:37:53+07:00</lastmod>  <!-- ✅ Format ISO 8601 -->
+    <lastmod>2025-02-28T21:38:29+07:00</lastmod>  <!-- ✅ Format ISO 8601 -->
+  </url>
+  <url>
+    <loc>https://gamagamespot.github.io/hotnews/rtp-pg-soft-dan-rtp-pragmatic-play-mencapai-99-fenomena-yang-menghebohkan-dunia-digital.html</loc>
+    <lastmod>2025-02-28T21:38:29+07:00</lastmod>  <!-- ✅ Format ISO 8601 -->
   </url>
 </urlset>
