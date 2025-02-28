@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+	<meta name="googlebot" content="all">
+	<meta name="bingbot" content="all">
+	<meta name="yandexbot" content="all">
+	<meta name="language" content="id">
+	<meta name="author" content="gamagamespot">
+	<meta name="copyright" content="gamagamespot">
+	<meta name="publisher" content="gamagamespot">
+	<meta name="distribution" content="global">
+	<meta name="geo.placename" content="Jawa Barat">
+	<meta name="geo.country" content="ID">
+	<meta name="geo.region" content="ID">
+	<meta name="tgn.nation" content="Indonesia">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+    
+    <!-- Title & Description -->
+	<title>INDO NEWS UPDATE</title>
+	<meta name="description" content="Update Informasi Terbaru Hari Ini Terpercaya">
+	<meta name="keywords" content="Kasino Online, game slot, gamagamespot">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://gamagamespot.github.io/">
+	<link rel="dns-prefetch" href="https://gamagamespot.github.io/" />
+	<link rel="alternate" hreflang="id-ID" href="https://gamagamespot.github.io/" />
+    <link rel="alternate" hreflang="id" href="https://gamagamespot.github.io/" />
+    <link rel="alternate" hreflang="x-default" href="https://gamagamespot.github.io/" />
+
+	<!-- Open Graph -->
+	<meta property="og:site_name" content="IndoNews Update">
+	<meta property="og:title" content="INDO NEWS UPDATE">
+	<meta property="og:url" content="https://gamagamespot.github.io/">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="Update Informasi Terbaru Hari Ini Terpercaya">
+	<meta property="og:image" content="/assets/gamagamespot.gif">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="66">
+	<meta property="og:locale" content="id_ID">
+	<meta property="og:region" content="Jawa Barat">
+	<meta property="og:country-name" content="Indonesia">
+
+	<!-- OG Article -->
+	<meta property="article:author" content="gamagamespot">
+	<meta property="article:section" content="Home, Game Slot, Kasino Online, ">
+	<meta property="article:tag" content="kasino-online, gamaslot, gamagamespot">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="INDO NEWS UPDATE">
+	<meta name="twitter:description" content="Update Informasi Terbaru Hari Ini Terpercaya">
+	<meta name="twitter:image" content="/assets/gamagamespot.gif">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="https://gamagamespot.github.io/assets/icon.png">
+	<link rel="apple-touch-icon" href="https://gamagamespot.github.io/assets/icon.png">
+	<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="style.css">
+ <script type="application/ld+json">
+	  {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"legalName": "gamagamespot",
+		"name": "gamagamespot",
+		"address": {
+		  "@type": "PostalAddress",
+		  "streetAddress": "Jl. Gama, Cigadung, Kec Cibeunying, Kaler ",
+		  "addressLocality": "Bandung Jawa Barat",
+		  "postalCode": "40191",
+		  "addressCountry": "ID"
+		},
+		"email": "supports@gamagamespot.com",
+		"telephone": "+6282117163918",
+		"image": "//gamagamespot.github.io/assets/gamagamespot.gif",
+		"sameAs": ["https://gamagamespot.github.io/"]
+	  }
+	</script>
+	
+</head>
+<body>
+    <div class="container">
+        <!-- Header dengan Logo -->
+        <div class="header">
+            <img src="/assets/gamagamespot.gif" alt="gamagamespot">
+            <h1>INDO NEWS UPDATE</h1>
+        </div>
+
+        <div class="profile">
+            <p>Update Informasi Terbaru Hari Ini Terpercaya</p>
+
+            <!-- Tombol Sitemap dan Author -->
+            <div class="button-container">
+                <a href="https://gamagamespot.github.io/sitemap.xml" class="button">📜 Sitemap</a>
+                <a href="https://github.com/gamagamespot" class="button">👤 Author</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="profile1">
+                <h2>📌 Daftar Postingan</h2>
+                <p id="loading" class="loading">Memuat postingan...</p>
+                <ul id="post-list" class="sitemap-list"></ul>
+                <a href="https://gamagamespot.github.io" class="button">🔗 Kunjungi Situs</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025. INDO NEWS UPDATE - All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadSitemap() {
+            try {
+                const response = await fetch("https://gamagamespot.github.io/sitemap.xml");
+                const text = await response.text();
+                
+                // Parsing XML
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(text, "text/xml");
+                
+                // Ambil semua <loc> dalam sitemap
+                const urls = xmlDoc.getElementsByTagName("loc");
+                let output = "";
+
+                for (let i = 1; i < urls.length; i++) {  
+                    const url = urls[i].textContent;
+                    output += `<li><a href="${url}" target="_blank">🔗 ${url.replace("https://gamagamespot.github.io/hotnews/", "").replace(".html", "").replace(/-/g, " ")}</a></li>`;
+                }
+                
+                document.getElementById("post-list").innerHTML = output;
+                document.getElementById("loading").style.display = "none"; 
+            } catch (error) {
+                console.error("Gagal memuat sitemap:", error);
+                document.getElementById("loading").innerText = "Gagal memuat postingan.";
+            }
+        }
+
+        window.onload = loadSitemap;
+    </script>
+</body>
+</html>
