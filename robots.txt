@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gamagamespot.github.io/sitemap.xml
